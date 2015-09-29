@@ -1,4 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&subset=latin,latin-ext)
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+
 $skinTextColor: #1e2a33 !default
 $skinTextActiveColor: #fff !default
 $skinTextTable: #7f8c8d !default
@@ -11,11 +12,11 @@ $skinLogo: #fff image-url("active_skin/default_logo.png") no-repeat 30px 0 !defa
 
 html
   background: #ecf0f1
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: $helvetica
 
 body.active_admin
   background: #ecf0f1
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: $helvetica
   padding-bottom: 80px
 
 #header
@@ -171,7 +172,7 @@ table.index_table
 .pagination
   margin-top: -2px
   a, span.page.current
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: $helvetica
     border: 1px solid #d3d8dc
     background: #ecf0f1
     @include no-shadow()
@@ -218,7 +219,7 @@ table.index_table
       font-weight: normal
       font-size: 13px
       text-transform: uppercase
-      font-family: 'Source Sans Pro', sans-serif
+      font-family: $helvetica
       padding: 7px 0
 
 #footer
@@ -308,7 +309,7 @@ form fieldset.inputs
 
 .attributes_table table th, .attributes_table table td
   padding: 10px 0
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: $helvetica
   color: #95a5a6
 .attributes_table table th
   font-weight: normal
@@ -334,7 +335,7 @@ body.logged_out
       border: none
     > h2
       background: $panelHeaderBck
-      font-family: 'Source Sans Pro', sans-serif
+      font-family: $helvetica
       color: #fff
       @include no-shadow()
       @include rounded(0)
@@ -365,7 +366,7 @@ form input[type=url],
 form input[type=tel], 
 form textarea
   @include rounded(0)
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: $helvetica
   padding: 5px 10px
 
 form.filter_form .filter_form_field.filter_date_range input[type=text]
